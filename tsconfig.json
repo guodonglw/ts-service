@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "module": "CommonJS",
+        "target": "ES2017",
+        "lib": [
+            "es2015"
+        ],
+        "allowJs": false,
+        "experimentalDecorators": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "alwaysStrict": true,
+        "noFallthroughCasesInSwitch": true,
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        "strict": true,
+        "removeComments": true,
+        "pretty": true,
+        "strictPropertyInitialization": true,
+        "outDir": "./dist",
+        "declaration": true,
+        "typeRoots": [
+            "./src/typings",
+            "./node_modules/@types"
+        ]
+    },
+    "include": [
+        "*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}

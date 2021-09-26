@@ -1,0 +1,27 @@
+{
+  "name": "ts-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "koa-views": "^7.0.1",
+    "koa2-cors": "^2.0.6",
+    "log4js": "^6.3.0",
+    "nunjucks": "^3.2.3",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa2-cors": "^2.0.2",
+    "@types/node": "^16.7.6"
+  }
+}
