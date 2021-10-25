@@ -21,7 +21,7 @@ class MyHttpError {
       try {
         await next()
       } catch (e) {
-        console.log(e)
+        ctx.log.error(e)
         this.handleError(ctx, e)
       }
     }

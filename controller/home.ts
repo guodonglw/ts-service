@@ -6,7 +6,7 @@ class Home {
   }
 
   protected index (ctx: Ctx): void {
-    // ctx.log.info('111111111111111')
+    ctx.log.info('111111111111111')
     ctx.response.body = '<h1>index page</h1>'
   }
 
@@ -14,5 +14,6 @@ class Home {
     await ctx.render('login')
   }
 }
+
 
 module.exports = Home

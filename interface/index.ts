@@ -1,3 +1,8 @@
 import * as Koa from 'koa'
 
-export type Ctx = Koa.Context
+interface CtxInter extends Koa.Context {
+  request: any,
+  response: any
+}
+
+export type Ctx = CtxInter

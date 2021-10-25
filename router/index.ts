@@ -1,17 +1,16 @@
 const koaRouter = require('koa-router')
 const router = new koaRouter()
 import HomeRouter from "./home"
-
+import MySqlRouter from "./mysql"
 class MainRouter {
-  protected app: any
   constructor (app: any) {
-    this.app = app
-    this.init()
+    this.init(app)
   }
 
-  private init () {
+  private init (app: any) {
     new HomeRouter(koaRouter, router)
-    this.app.use(router.routes()).use(router.allowedMethods())
+    new MySqlRouter(koaRouter, router)
+    app.use(router.routes()).use(router.allowedMethods())
   }
 }
 

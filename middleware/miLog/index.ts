@@ -55,11 +55,9 @@ class Logger {
       logger.error(this.access(ctx, message))
     }
     const start: any = new Date()
-    console.log('start', start)
     ctx.log = this.contextLogger
     await next()
     const responseTime = Date.now() - start
-    console.log('end', responseTime)
     logger.info(`响应时间为${responseTime / 1000}s`)
   }
 
