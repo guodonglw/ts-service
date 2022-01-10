@@ -1,0 +1,13 @@
+{
+    "development": {
+        "database": "",
+        "username": "",
+        "password": "",
+        "dialect": "mysql"
+    },
+    "production": {
+        "database": "",
+        "username": "",
+        "password": ""
+    }
+}
